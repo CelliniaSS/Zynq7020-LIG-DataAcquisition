@@ -205,3 +205,49 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# ======================================================
+# Vivado & Zynq 专属过滤规则 (FPGA 工程师必备)
+# ======================================================
+
+# 忽略所有 Vivado 产生的日志和日志副本
+*.log
+*.jou
+*.pb
+*.str
+
+# 忽略所有自动生成的文件夹（非常重要）
+.Xil/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.gen/
+*.sim/
+
+# 忽略具体的临时报告和脚本
+*.rpt
+*.rpx
+*.rst
+*.xml
+*.bat
+*.sh
+*.js
+*.wdf
+clockInfo.txt
+
+# 忽略生成的比特流（如果你不想把几十 MB 的二进制传上去的话）
+*.bit
+*.bin
+
+*.vds
+*.dcp
+*.vdi
+*.tcl
+*.txt
+# 忽略所有综合产生的临时约束
+dont_touch.xdc
+*synth_1/
+
+__synthesis_is_complete__
